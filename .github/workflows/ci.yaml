@@ -49,5 +49,5 @@ jobs:
 
       - name: Update backend deployment YAML with latest image
         run: |
-          sed -i "s|image:.*|image: $IMAGE_BACKEND:latest|g" ./k8s/backend-deployment.yaml
+          sed -i "s|image:.*|image: $IMAGE_BACKEND:latest|g" ./kubernetes/backend/deployment.yaml
 

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: docker.io/YOUR_DOCKERHUB_USERNAME/easysplit-backend:latest
+          image: docker.io/m0hdali/easysplit-backend:latest
           ports:
             - containerPort: 8080
           env:
