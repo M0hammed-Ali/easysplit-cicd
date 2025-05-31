@@ -6,8 +6,8 @@ on:
       - main
 
 env:
-  IMAGE_BACKEND: docker.io/YOUR_DOCKERHUB_USERNAME/easysplit-backend
-  IMAGE_FRONTEND: docker.io/YOUR_DOCKERHUB_USERNAME/easysplit-frontend
+  IMAGE_BACKEND: docker.io/m0hdali/easysplit-backend
+  IMAGE_FRONTEND: docker.io/m0hdali/easysplit-frontend
 
 jobs:
   build-and-push:
