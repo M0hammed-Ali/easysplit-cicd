@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: ghcr.io/YOUR_USERNAME/YOUR_REPO/backend:latest
+          image: docker.io/YOUR_DOCKERHUB_USERNAME/easysplit-backend:latest
           ports:
             - containerPort: 8080
           env:
