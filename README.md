@@ -1,1 +1,1 @@
-#EasySplit - CI / CD
+EasySplit - CI / CD
