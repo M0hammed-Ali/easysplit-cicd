@@ -17,7 +17,7 @@ const Expenses = () => {
 
   const fetchExpenses = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/v1/expenses');
+      const response = await axios.get('http://frontend.easysplit.local/api/v1/expenses');
       setExpenses(response.data);
     } catch (error) {
       console.error('Error fetching expenses:', error);
@@ -27,7 +27,7 @@ const Expenses = () => {
 
   const fetchGroups = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/v1/groups');
+      const response = await axios.get('http://frontend.easysplit.local/api/v1/groups');
       setGroups(response.data);
     } catch (error) {
       console.error('Error fetching groups:', error);
@@ -59,7 +59,7 @@ const Expenses = () => {
     e.preventDefault();
 
     try {
-      await axios.post('http://localhost:8080/api/v1/expenses', {
+      await axios.post('http://frontend.easysplit.local/api/v1/expenses', {
         date: date,
         expenseAmount: expenseAmount,
         expenseName: expenseName,
