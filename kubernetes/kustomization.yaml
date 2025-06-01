@@ -9,7 +9,6 @@ resources:
   - frontend/service.yaml
   - db/service.yaml
   - db/statefulset.yaml
-  - sealed-secrets/secrets.yaml
   - sealed-secrets/db-credentials.yaml
 
 namespace: easysplit
