@@ -14,7 +14,7 @@ const Balances = () => {
 
   const fetchGroupMembers = async () => {
     try {
-      const response = await axios.get('http://frontend.easysplit.local/api/v1/groupmembers');
+      const response = await axios.get('http://backend.easysplit.local/api/v1/groupmembers');
       setGroupMembers(response.data);
     } catch (error) {
       console.error('Error fetching group members:', error);
@@ -24,7 +24,7 @@ const Balances = () => {
 
   const fetchExpenses = async () => {
     try {
-      const response = await axios.get('http://frontend.easysplit.local/api/v1/expenses');
+      const response = await axios.get('http://backend.easysplit.local/api/v1/expenses');
       setExpenses(response.data);
     } catch (error) {
       console.error('Error fetching expenses:', error);

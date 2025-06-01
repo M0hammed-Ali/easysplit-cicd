@@ -11,7 +11,7 @@ const Users = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get('http://frontend.easysplit.local/api/v1/users');
+      const response = await axios.get('http://backend.easysplit.local/api/v1/users');
       setUsers(response.data);
     } catch (error) {
       console.error('Error fetching users:', error);
@@ -27,7 +27,7 @@ const Users = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://frontend.easysplit.local/api/v1/users', {
+      const response = await axios.post('http://backend.easysplit.local/api/v1/users', {
         username: username
       });
 

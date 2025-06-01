@@ -11,7 +11,7 @@ const Groups = () => {
 
   const fetchGroups = async () => {
     try {
-      const response = await axios.get('http://frontend.easysplit.local/api/v1/groups');
+      const response = await axios.get('http://backend.easysplit.local/api/v1/groups');
       setGroups(response.data);
     } catch (error) {
       console.error('Error fetching groups:', error);
@@ -27,7 +27,7 @@ const Groups = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://frontend.easysplit.local/api/v1/groups', {
+      const response = await axios.post('http://backend.easysplit.local/api/v1/groups', {
         groupName: group_name
       });
 
