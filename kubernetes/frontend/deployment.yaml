@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: ghcr.io/YOUR_USERNAME/YOUR_REPO/frontend:latest
+          image: docker.io/m0hdali/easysplit-frontend:latest
           ports:
             - containerPort: 80
